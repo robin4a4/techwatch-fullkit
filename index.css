@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply bg-slate-100;
+  }
+
+  a {
+    @apply outline-none focus-visible:ring-2 focus-visible:ring-pink-500 focus-visible:ring-offset-2;
+  }
+}
+
+@layer utilities {
+  .gradient {
+    background: linear-gradient(
+      50deg,
+      #046aef -0.82%,
+      #bc48b0 35.12%,
+      #ef4444 71.06%,
+      #f97316 103.73%
+    );
+  }
+
+  .no-transition * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+  }
+}
